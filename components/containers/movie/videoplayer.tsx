@@ -40,7 +40,7 @@ export default function VideoPlayer({ id }: any) {
 
   const videoSources: Record<VideoSourceKey, string> = {
     default: `https://flix.1ani.me/embed/tmdb-movie-${id}`,
-    vidora: `https://vidora.su/movie/${id}?colour=141414&autoplay=true&autonextepisode=true&backbutton=https%3A%2F%2Fenjoytown.pro%2F&pausescreen=true&logo=https%3A%2F%2Fenjoytown.pro%2Fandroid-chrome-192x192.png`,
+    vidora: `https://vidora.su/movie/${id}?colour=141414&autoplay=true&autonextepisode=true&backbutton=https%3A%2F%2Fjonak.vercel.app%2F&pausescreen=true&logo=https%3A%2F%2Fjonak.vercel.app%2Fandroid-chrome-192x192.png`,
     embedsu: `https://embed.su/embed/movie/${id}`,
     autoembed: `https://player.autoembed.cc/embed/movie/${id}`,
     vidsrc: `https://vidsrc.in/embed/movie/${id}`,
