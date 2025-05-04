@@ -167,7 +167,7 @@ export default function VideoPlayer({ id }: { id: string }) {
         </div>
         <TabsContent value="vidora">
           <iframe
-            src={`https://vidora.su/tv/${id}/${season}/${episode}?colour=141414&autoplay=true&autonextepisode=true&backbutton=https%3A%2F%2Fjonak.vercel.app%2F&pausescreen=true&logo=https%3A%2F%2Fjonak.vercel.app%2Fandroid-chrome-192x192.png`}
+            src={`https://vidora.su/tv/${id}/${season}/${episode}?colour=141414&autoplay=true&autonextepisode=true&backbutton=https%3A%2F%2Fenjoytown.pro%2F&pausescreen=true&logo=https%3A%2F%2Fenjoytown.pro%2Fandroid-chrome-192x192.png`}
             referrerPolicy="origin"
             allowFullScreen
             width="100%"
