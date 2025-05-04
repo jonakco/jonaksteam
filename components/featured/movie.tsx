@@ -1,9 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
-//import { Image as ImageIcon } from 'lucide-react'; // Removed as per interpretation of user request
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Badge } from '@/components/ui/badge';
@@ -63,15 +61,9 @@ export default function FeaturedMovies({ featureType }: MovieListProps) {
               >
                 <div className="bg-background/50 relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-md border shadow-sm">
                   {item.backdrop_path ? (
-                    <Image
-                      fill
-                      className="object-cover"
-                      src={`https://image.tmdb.org/t/p/original${item.backdrop_path}`}
-                      alt={item.title}
-                      sizes="100%"
-                    />
+                    <span className="text-muted">No Image Available</span>
                   ) : (
-                    <span className="text-muted">No Image Available</span> {/* Replaced ImageIcon */}
+                    <span className="text-muted">No Image Available</span>
                   )}
                 </div>
                 <div className="space-y-1.5">
