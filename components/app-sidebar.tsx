@@ -131,12 +131,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild className="data-[slot=sidebar-menu-button]:!p-1.5">
-              <Link href="/">
+              <Link href="/" className="flex items-center gap-2">
                 <Clapperboard className="pl-0.5 group-data-[collapsible=icon]:size-6" />
                 {state === 'collapsed' ? (
                   <></>
                 ) : (
-                  <span className="text-base font-semibold">Jonak</span>
+                  <span className="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-xl font-bold text-transparent">Jonak</span>
                 )}
               </Link>
             </SidebarMenuButton>
