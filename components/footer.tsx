@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="mx-auto max-w-6xl py-4">
         <div className="flex flex-col justify-between gap-4 px-4 md:flex-row xl:px-0">
           <div className="flex items-center gap-2">
-            <Clapperboard size={24} />
+            <h2 className="text-foreground font-medium">jonak</h2>
 
             <p className="text-muted-foreground text-xs">
              {'© '}{new Date().getFullYear()} Jonak-Ltd
