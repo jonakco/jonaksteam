@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
-import { Image as ImageIcon } from 'lucide-react';
+//import { Image as ImageIcon } from 'lucide-react'; // Removed as per interpretation of user request
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Badge } from '@/components/ui/badge';
@@ -71,7 +71,7 @@ export default function FeaturedMovies({ featureType }: MovieListProps) {
                       sizes="100%"
                     />
                   ) : (
-                    <ImageIcon className="text-muted" />
+                    <span className="text-muted">No Image Available</span> {/* Replaced ImageIcon */}
                   )}
                 </div>
                 <div className="space-y-1.5">
