@@ -6,7 +6,7 @@ export default function NotFound() {
     <div>
       <div className="relative flex h-screen flex-col place-items-center justify-center">
         <h1 className="bg-gradient-to-r from-pink-500 via-fuchsia-500 to-violet-600 bg-clip-text text-[80px] leading-none font-extrabold tracking-tight text-transparent sm:text-[100px] lg:text-[120px]">
-          404
+          404 :(
         </h1>
         <span className="mt-2 mb-6 text-3xl sm:text-4xl">⏳</span>
         <p className="m-5 max-w-3xl px-6 text-center text-2xl font-thin text-slate-800 md:text-3xl dark:text-slate-100">

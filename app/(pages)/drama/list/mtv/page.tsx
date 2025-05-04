@@ -138,7 +138,7 @@ export default function List() {
               </ul>
             </li>
             <li className="mb-2">
-              <a href="https://nunflix.com/" className="text-blue-500 hover:underline">
+              <a href="https://discord.com/" className="text-blue-500 hover:underline">
                 NunFlix
               </a>{' '}
               <ul className="ml-4 list-none">
