@@ -3,7 +3,7 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: 'Jonak',
   description:
-    'Beautifully designed website where you can watch anime, drama, movies and tv shows for free. Built with Next.JS and shadcn/ui.',
+    'Beautifully designed website where you can watch anime, drama, movies and tv shows for free.',
   mainNav: [
     {
       title: 'Movie',
@@ -19,8 +19,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: 'https://twitter.com/avalynndev',
-    github: 'https://github.com/avalynndev/enjoytown',
+    twitter: 'https://twitter.com/aantarip',
+    github: 'https://github.com/aantarip',
     enjoytown: '/',
   },
 };
