@@ -45,9 +45,9 @@ import Link from 'next/link';
 
 const data = {
   user: {
-    name: 'avalynndev',
-    email: 'm@example.com',
-    avatar: '/avalynndev.png',
+    name: 'aantarip',
+    email: 'jonak@jonak.live',
+    avatar: 'aantarip.png',
   },
   navMain: [
     {
