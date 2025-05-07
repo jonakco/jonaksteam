@@ -55,14 +55,14 @@ const nextConfig = {
     },
   },
   env: {
-    TMDB_API_KEY: process.env.TMDB_API_KEY || 'default_key',
+    TMDB_API_KEY: process.env.TMDB_API_KEY || '09e0eae6747fa665c21e15fe465c1fd3',
   },
   async rewrites() {
     return [
       {
         // Proxy /api/tmdb requests to TMDB API to hide API key
         source: '/api/tmdb/:path*',
-        destination: `https://api.themoviedb.org/3/:path*?api_key=${process.env.TMDB_API_KEY}`,
+        destination: `https://api.themoviedb.org/3/:path*?api_key=09e0eae6747fa665c21e15fe465c1fd3`,
       },
     ];
   },
