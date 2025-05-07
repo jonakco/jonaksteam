@@ -1,0 +1,62 @@
+[15:42:20.487] Running build in Washington, D.C., USA (East) – iad1
+[15:42:20.501] Cloning github.com/jonakco/jonaksteam-ikk (Branch: main, Commit: ffb82f4)
+[15:42:20.682] Previous build caches not available
+[15:42:21.113] Cloning completed: 612.000ms
+[15:42:21.496] Running "vercel build"
+[15:42:21.869] Vercel CLI 41.7.2
+[15:42:22.186] Installing dependencies...
+[15:42:26.029] npm warn deprecated rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+[15:42:26.223] npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+[15:42:26.986] npm warn deprecated workbox-cacheable-response@6.6.0: workbox-background-sync@6.6.0
+[15:42:26.997] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[15:42:27.132] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[15:42:27.226] npm warn deprecated workbox-google-analytics@6.6.0: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
+[15:42:31.392] npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+[15:42:47.154] 
+[15:42:47.154] added 1054 packages in 25s
+[15:42:47.155] 
+[15:42:47.155] 207 packages are looking for funding
+[15:42:47.156]   run `npm fund` for details
+[15:42:47.221] Detected Next.js version: 15.3.1
+[15:42:47.232] Running "npm run build"
+[15:42:47.381] 
+[15:42:47.382] > jonak@2.1.0 build
+[15:42:47.382] > next build
+[15:42:47.382] 
+[15:42:47.951] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[15:42:47.952] This information is used to shape Next.js' roadmap and prioritize features.
+[15:42:47.952] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[15:42:47.952] https://nextjs.org/telemetry
+[15:42:47.952] 
+[15:42:48.009]    ▲ Next.js 15.3.1
+[15:42:48.009] 
+[15:42:48.076]    Creating an optimized production build ...
+[15:43:19.416]  ✓ Compiled successfully in 27.0s
+[15:43:19.421]    Linting and checking validity of types ...
+[15:43:30.992] 
+[15:43:30.992] Failed to compile.
+[15:43:30.992] 
+[15:43:30.992] ./app/(pages)/anime/watch/[id]/[episode]/page.tsx
+[15:43:30.992] 81:2  Error: Insert `⏎`  prettier/prettier
+[15:43:30.993] 
+[15:43:30.993] ./app/layout.tsx
+[15:43:30.993] 30:37  Error: Replace `⏎··children,⏎}:·{⏎··children:·React.ReactNode;⏎` with `·children·}:·{·children:·React.ReactNode·`  prettier/prettier
+[15:43:30.993] 81:2  Error: Insert `⏎`  prettier/prettier
+[15:43:30.993] 
+[15:43:30.993] ./components/featured/movie.tsx
+[15:43:30.993] 131:2  Error: Insert `⏎`  prettier/prettier
+[15:43:30.993] 
+[15:43:30.993] ./components/footer.tsx
+[15:43:30.993] 14:13  Error: Insert `··`  prettier/prettier
+[15:43:30.993] 
+[15:43:30.993] ./lib/store.ts
+[15:43:30.993] 1:1  Error: Delete `⏎`  prettier/prettier
+[15:43:30.993] 
+[15:43:30.993] ./lib/tmdb/index.ts
+[15:43:30.993] 1:1  Error: Delete `⏎`  prettier/prettier
+[15:43:30.993] 85:37  Error: Replace `mediaType:·'all'·|·'movie'·|·'tv'·|·'person',·timeWindow:·'day'·|·'week'·=·'day'` with `⏎··mediaType:·'all'·|·'movie'·|·'tv'·|·'person',⏎··timeWindow:·'day'·|·'week'·=·'day',⏎`  prettier/prettier
+[15:43:30.994] 
+[15:43:30.994] info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+[15:43:31.037] Error: Command "npm run build" exited with 1
+[15:43:31.818] 
+[15:43:34.943] Exiting build container
