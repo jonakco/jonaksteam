@@ -15,7 +15,9 @@ import {
   person,
 } from '@/lib/tmdb/api';
 
-const TMDB_API_KEY = process.env.TMDB_API_KEY;
+import { tmdbConfig } from '@/config/tmdb.config';
+
+const TMDB_API_KEY = tmdbConfig.apiKey;
 
 const handleAxiosError = (error: AxiosError) => {
   if (error.response) {
