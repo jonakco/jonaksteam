@@ -70,20 +70,57 @@ export const tmdb = {
 export * from '@/lib/tmdb/models';
 export * from '@/lib/tmdb/api';
 
-async function fetchFromTMDB(endpoint: string, params?: Record<string, string>) {
+//New functions from edited code
+import { TMDB_API_KEY } from '@/config/tmdb.config';
+
+export const tmdbApi = axios.create({
+  baseURL: 'https://api.themoviedb.org/3',
+  params: {
+    api_key: TMDB_API_KEY,
+    language: 'en-US',
+  },
+});
+
+export const fetchTrending = async (mediaType: 'all' | 'movie' | 'tv' | 'person', timeWindow: 'day' | 'week' = 'day') => {
   try {
-    const response = await axios.get(endpoint, {
-      baseURL: 'https://api.themoviedb.org/3',
+    const response = await tmdbApi.get(`/trending/${mediaType}/${timeWindow}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching trending:', error);
+    return null;
+  }
+};
+
+export const fetchPopularMovies = async () => {
+  try {
+    const response = await tmdbApi.get('/movie/popular');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching popular movies:', error);
+    return null;
+  }
+};
+
+export const fetchPopularTVShows = async () => {
+  try {
+    const response = await tmdbApi.get('/tv/popular');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching popular TV shows:', error);
+    return null;
+  }
+};
+
+export const searchMulti = async (query: string) => {
+  try {
+    const response = await tmdbApi.get('/search/multi', {
       params: {
-        api_key: TMDB_API_KEY,
-        language: 'en-US',
-        ...params,
+        query,
       },
     });
     return response.data;
   } catch (error) {
-    console.error('TMDB API Error:', error);
+    console.error('Error searching:', error);
     return null;
   }
-}
-}
+};
