@@ -19,7 +19,7 @@ export const Icons = {
   paw: PawPrint,
   check: CircleCheckBig,
   blank: (props: LucideProps) => (
-    <div className="text-foreground font-bold text-xl" {...props}>
+    <div className="text-foreground text-xl font-bold" {...props}>
       jonak
     </div>
   ),
