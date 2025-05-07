@@ -6,7 +6,7 @@ export const tmdbConfig = {
 } as const;
 
 export const apiConfig = {
-  consumetApiUrl: 'PASTE_YOUR_CONSUMET_API_URL_HERE', // Your Consumet API URL
+  consumetApiUrl: 'https://apiforsite-adtk2mdtb-littlesoldiergamings-projects.vercel.app/', // Your Consumet API URL
   downloadApiUrl: 'https://v1.api.ani.rohi.dev/api/dramacool'
 } as const;
 
