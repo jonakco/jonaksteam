@@ -69,3 +69,20 @@ export const tmdb = {
 
 export * from '@/lib/tmdb/models';
 export * from '@/lib/tmdb/api';
+
+async function fetchFromTMDB(endpoint: string, params?: Record<string, string>) {
+  try {
+    const response = await axios.get(endpoint, {
+      baseURL: 'https://api.themoviedb.org/3',
+      params: {
+        api_key: TMDB_API_KEY,
+        language: 'en-US',
+        ...params,
+      },
+    });
+    return response.data;
+  } catch (error) {
+    console.error('TMDB API Error:', error);
+    return null;
+  }
+}
