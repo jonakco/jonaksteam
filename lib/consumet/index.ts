@@ -13,7 +13,7 @@ export async function FetchAnimeInfo(data: any) {
 }
 
 export async function fetchAnimeSearch(text: any) {
-  const res = await fetch(`${process.env.CONSUMET_API_URL}/meta/anilist/${text}`, {
+  const res = await fetch(`${apiConfig.consumetApiUrl}/meta/anilist/${text}`, {
     next: { revalidate: 21600 },
   });
   const data = await res.json();
