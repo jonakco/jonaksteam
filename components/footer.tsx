@@ -10,9 +10,7 @@ export const Footer = () => {
             <Clapperboard size={24} />
 
             <p className="text-muted-foreground text-xs">
-             {'© '}
-             {new Date().getFullYear()} Jonak-Ltd
-
+              {'© '}{new Date().getFullYear()} Jonak-Ltd
             </p>
 
             <div className="h-3 border-r" />
