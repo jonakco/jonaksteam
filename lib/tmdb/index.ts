@@ -124,3 +124,5 @@ export const searchMulti = async (query: string) => {
     return null;
   }
 };
+
+}

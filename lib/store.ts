@@ -1,2 +1,14 @@
-` block.  To help me generate the corrected code, please provide the contents of the files: `./components/command-search.tsx`, `./components/featured/movie.tsx`, `./components/footer.tsx`, `./lib/store.ts`, and `./lib/tmdb/index.ts`.
-The provided information is insufficient to complete the task.  To fix the ESLint and Prettier errors, the original code for the specified files is required.  Without the original code, I cannot generate the corrected version.
+
+import { create } from 'zustand';
+
+interface ToastStore {
+  hasShown: boolean;
+  triggerToast: () => void;
+  resetToast: () => void;
+}
+
+export const useToastStore = create<ToastStore>((set) => ({
+  hasShown: false,
+  triggerToast: () => set({ hasShown: true }),
+  resetToast: () => set({ hasShown: false }),
+}));
