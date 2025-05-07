@@ -1,3 +1,4 @@
+
 import axios, { AxiosError } from 'axios';
 import {
   collections,
@@ -124,5 +125,3 @@ export const searchMulti = async (query: string) => {
     return null;
   }
 };
-
-}
