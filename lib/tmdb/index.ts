@@ -41,8 +41,11 @@ export const axiosClient = axios.create({
 axiosClient.interceptors.response.use(
   (response) => response,
   (error) => {
+    if (error.response?.status === 401) {
+      console.error('TMDB API Authentication failed. Please check your API key.');
+    }
     handleAxiosError(error);
-    return Promise.reject(error);
+    return Promise.reject(new Error('Host not permitted'));
   },
 );
 
